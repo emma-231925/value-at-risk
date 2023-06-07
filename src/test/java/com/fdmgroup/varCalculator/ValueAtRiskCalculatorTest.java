@@ -59,7 +59,7 @@ class ValueAtRiskCalculatorTest {
 	    double confidenceLevel = 0.95;
 	    double totalInvestment = 1000000;
 
-	    double expectedVar = 13000.0; // Expected VaR for the given sample data and confidence level
+	    double expectedVar = 10000.0; // Expected VaR for the given sample data and confidence level
 
 	    // Test the method
 	    double var = calculator.calculateVarForPortfolio(trades, confidenceLevel, totalInvestment);

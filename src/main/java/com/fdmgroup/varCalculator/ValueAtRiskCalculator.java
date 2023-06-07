@@ -62,12 +62,12 @@ public class ValueAtRiskCalculator {
 		}
 		
 		//sort by worst weighted return
-//		Collections.sort(sumWeightedReturns);
+		Collections.sort(sumWeightedReturns);
 		System.out.println(sumWeightedReturns);
 
 		//matching logic to single trade VaR
 		//convert to zero based index by subtracting one
-		double index = Math.ceil((1 - confidenceLevel) * sumWeightedReturns.size() - 1);
+		double index = Math.ceil((1 - confidenceLevel) * sumWeightedReturns.size());
 				
 		double valueAtRisk = -1 * sumWeightedReturns.get((int) index) * totalInvestment;
 		long roundedValue = Math.round((valueAtRisk*100) / 100);

@@ -1,1 +1,3 @@
-# value-at-risk
+# Value at Risk Calculator
+
+##Motivation

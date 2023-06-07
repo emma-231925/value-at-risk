@@ -66,7 +66,6 @@ public class ValueAtRiskCalculator {
 		System.out.println(sumWeightedReturns);
 
 		//matching logic to single trade VaR
-		//convert to zero based index by subtracting one
 		double index = Math.ceil((1 - confidenceLevel) * sumWeightedReturns.size());
 				
 		double valueAtRisk = -1 * sumWeightedReturns.get((int) index) * totalInvestment;
